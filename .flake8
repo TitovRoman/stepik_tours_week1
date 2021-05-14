@@ -1,4 +1,4 @@
-[200~[flake8]
+[flake8]
 max_line_length = 120
 exclude = .git,__pycache__,venv
 max-cognitive-complexity = 5
