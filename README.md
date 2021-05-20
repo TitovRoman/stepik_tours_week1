@@ -1,1 +1,1 @@
-# stepik_tours_week1
+# stepik_tours week1 and week2
