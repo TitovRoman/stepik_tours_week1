@@ -1,0 +1,15 @@
+<div class="row mt-5">
+{% for pk, tour in tours.items %}
+    <div class="col-4">
+        <div class="card mb-4">
+            <div class="aspect-ratio-box">
+                <img src="{{ tour.picture }}" alt="{{ tour.title }}">
+            </div>
+            <div class="card-body">
+                <h2 class="h5 card-title">{{ tour.title }}</h2>
+                <p class="card-text">{{ tour.description|truncatewords:20 }}</p>
+                <a href="{% url 'tour' pk %}" class="btn btn-sm btn-primary">Подробнее</a>
+            </div>
+        </div>
+    </div>{% endfor %}
+</div>
